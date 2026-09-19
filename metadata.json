@@ -1,0 +1,6 @@
+{
+  "name": "Public Areas Management",
+  "description": "Plataforma completa para cadastrar funcionários, escalas, mapeamento de ambientes e criação de checklists de rotina e tarefas eventuais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

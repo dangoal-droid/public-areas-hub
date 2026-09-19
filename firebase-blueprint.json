@@ -1,0 +1,114 @@
+{
+  "collections": {
+    "employees": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "employeeNumber": "string",
+        "shift": "string",
+        "schedule": "string",
+        "role": "string",
+        "defaultCartNumber": "string",
+        "defaultRadioNumber": "string",
+        "defaultKeyNumber": "string",
+        "active": "boolean",
+        "gender": "string"
+      }
+    },
+    "environments": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "description": "string",
+        "subAreas": "array"
+      }
+    },
+    "taskTemplates": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "type": "string",
+        "environmentId": "string",
+        "shiftTarget": "string",
+        "frequency": "string"
+      }
+    },
+    "checklists": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "employeeId": "string",
+        "employeeName": "string",
+        "employeeRole": "string",
+        "shift": "string",
+        "date": "string",
+        "intervalTime": "string",
+        "coverageTime": "string",
+        "cartNumber": "string",
+        "radioNumber": "string",
+        "keyNumber": "string",
+        "environmentId": "string",
+        "environmentName": "string",
+        "tasks": "array",
+        "status": "string",
+        "notes": "string"
+      }
+    },
+    "schedules": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "employeeId": "string",
+        "employeeName": "string",
+        "monday": "string",
+        "tuesday": "string",
+        "wednesday": "string",
+        "thursday": "string",
+        "friday": "string",
+        "saturday": "string",
+        "sunday": "string"
+      }
+    },
+    "settings": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "language": "string",
+        "logoUrl": "string"
+      }
+    },
+    "customShifts": {
+      "rules": {
+        "read": "true",
+        "write": "true"
+      },
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "parentShift": "string"
+      }
+    }
+  }
+}
